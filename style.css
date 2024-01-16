@@ -1,0 +1,153 @@
+/* Basic styling for the container */
+.app {
+ background-image: url(../countries.png);
+    padding: 20px;
+    color: black;
+}
+
+
+/* Styling for the search input */
+#search {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Styling for the weather cards */
+.col-md-4, #country {
+    background-image: url(../countries.png);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.8s ease-out, pulse 2s infinite;
+    position: relative;
+}
+
+.col-md-4:hover, #country:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for the today card */
+#today {
+    margin-top: 20px;
+}
+
+.today-date {
+    font-size: 14px;
+    color:black;
+}
+
+#country {
+    margin-top: 20px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+#today-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color:black;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.weather-info {
+    text-align: center;
+}
+
+/* Styling for the tomorrow and after-tomorrow cards */
+#tomoro, #after {
+    margin-top: 20px;
+}
+
+.tomoro-info, .after-info {
+    font-size: 16px;
+    color:black;
+}
+
+.tomoro-img, .after-img ,#today-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.navlogo{
+    background-image: url(../countries.png);
+}
+
+#Subscribe {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
+.icon i{
+    cursor: pointer;
+
+}
+.icon i:hover{
+    color:rgb(0, 204, 255);
+}
+a {
+    color: #007bff; /* Set your preferred text color */
+    text-decoration: none; /* Remove the default underline */
+    transition: color 0.3s; /* Add a smooth transition for better user experience */
+  }
+
+  /* Styling for the anchor when it is in focus */
+  a:focus {
+    outline: 2px solid #007bff; /* Set the focus outline color and style */
+    outline-offset: 4px; /* Adjust the space between the outline and the element */
+    color: #004080; /* Change the text color to indicate focus */
+  }
+
+  /* Shadow class to be applied to the previously focused anchor */
+  .focused {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Set the shadow properties */
+  }

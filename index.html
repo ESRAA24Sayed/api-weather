@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../api-weather/css/all.min.css">
+    <link rel="stylesheet" href="../api-weather/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../api-weather/css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navlogo">
+        <div class="container mt-4 mb-4">
+          <a class="navbar-brand" href="#"> <i class="fa-solid fa-cloud-sun"></i>
+            <span>Weather</span><br><br>
+            <span>tagline goes here</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+           
+              <li class="nav-item">
+                <a class="nav-link focusable" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link focusable" href="#">News</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link focusable" href="#">Live Cameras</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link focusable" href="#">Photos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link focusable" href="#">Contact</a>
+              </li>
+     
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+
+
+<div class="app mt-3">
+  <div class="container text-center">
+      <!-- search-input -->
+      <input type="text" placeholder="Find Your Location..." id="search" class="w-100 mx-auto rounded-5 py-3 px-3 bg-info text-light">
+      
+      <div class="row g-0 mt-5">
+          <!-- today-weather -->
+          <div class="col-md-4 bg-danger m-0">
+              <div id="today" class="d-flex flex-column align-items-center">
+                  <p id="today-name"></p>
+                  <div class="today-date">
+                      <span id="today-day"></span>
+                      <span id="today-month"></span>
+                  </div>
+              </div>
+              <div id="country" class="text-center">
+                  <p id="today-location"></p>
+                  <div class="today-info">
+                      <span id="today-temp"></span>
+                      <p id="today-cond"></p>
+                  </div>
+                  <img src="" alt="" id="today-img">
+              </div>
+              
+              <div id="other" class="d-flex justify-content-around mt-3">
+                  <div class="weather-info">
+                      <img src="" alt="">
+                      <i class="fa-solid fa-umbrella"></i><p id="humidity"></p>
+                  </div>
+
+                  <div class="weather-info">
+                      <img src="" alt="">
+                      <i class="fa-solid fa-wind"></i><p id="wind-k"></p>
+                  </div>
+
+                  <div class="weather-info">
+                      <img src="" alt="">
+                      <i class="fa-regular fa-compass"></i><p id="wind-d"></p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- tomorrow-weather -->
+          <div class="col-md-4 bg-info m-0">
+              <div id="tomoro">
+                  <p class="tomoro-name"></p>
+              </div>
+              <img src="" alt="" class="tomoro-img">
+              <div class="tomoro-info">
+                  <span class="max-temp"></span>
+                  <span class="min-temp"></span>
+              </div>
+              <p class="tomoro-cond"></p>
+          </div>
+
+          <!-- after-tomorrow -->
+          <div class="col-md-4 bg-warning m-0">
+              <div id="after">
+                  <p class="tomoro-name"></p>
+              </div>
+              <img src="" alt="" class="tomoro-img">
+              <div class="after-info">
+                  <span class="max-temp"></span>
+                  <span class="min-temp"></span>
+              </div>
+              <p class="tomoro-cond"></p>
+          </div>
+      </div>
+      <div id="last-part" class=" mt-5 d-flex ">
+        <input type="text" placeholder="Enter Your Email To Subscribe..." id="Subscribe" class="w-75 mx-auto rounded-5 py-3 px-3 bg-info text-light">
+        
+        <div class="icon mt-md-3 me-md-3">
+          <i class="fa-brands fa-facebook fa-2xl "></i>
+          <i class="fa-brands fa-twitter fa-2xl "></i>
+          <i class="fa-brands fa-pinterest fa-2xl "></i>
+        </div>
+      </div>
+      <p class="mt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      
+  </div>
+ 
+</div>
+
+
+
+    <script src="../api-weather/js/index.js"></script>
+    <script src="../api-weather/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
